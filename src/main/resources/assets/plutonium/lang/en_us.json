@@ -1,8 +1,11 @@
 {
   "item.plutonium.polymer": "Polymer",
+  "item.plutonium.duct_tape": "Duct Tape",
   "item.plutonium.raw_uranium": "Raw Uranium",
   "item.plutonium.uranium_ingot": "Uranium Ingot",
   "block.plutonium.uranium_block": "Block of Uranium",
+  "block.plutonium.uranium_ore": "Uranium Ore",
+  "block.plutonium.uranium_deepslate_ore": "Deepslate Uranium Ore",
 
   "itemgroup.uranium": "Nancy's Nuclear Thingies!"
 }

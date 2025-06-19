@@ -19,8 +19,11 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_URANIUM);
                         entries.add(ModItems.URANIUM_INGOT);
                         entries.add(ModBlocks.URANIUM_BLOCK);
+                        entries.add(ModBlocks.URANIUM_ORE);
+                        entries.add(ModBlocks.URANIUM_DEEPSLATE_ORE);
 
                         entries.add(ModItems.POLYMER);
+                        entries.add(ModItems.DUCT_TAPE);
 
                     }).build());
 

@@ -14,6 +14,7 @@ import net.nancy.plutonium.block.ModBlocks;
 
 public class ModItems {
     public static final Item POLYMER = registerItem("polymer", new Item(new FabricItemSettings()));
+    public static final Item DUCT_TAPE = registerItem("duct_tape", new Item(new FabricItemSettings()));
     public static final Item RAW_URANIUM = registerItem("raw_uranium", new Item(new FabricItemSettings()));
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings()));
 
