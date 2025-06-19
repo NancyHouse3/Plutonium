@@ -1,0 +1,8 @@
+{
+  "item.plutonium.polymer": "Polymer",
+  "item.plutonium.raw_uranium": "Raw Uranium",
+  "item.plutonium.uranium_ingot": "Uranium Ingot",
+  "block.plutonium.uranium_block": "Block of Uranium",
+
+  "itemgroup.uranium": "Nancy's Nuclear Thingies!"
+}

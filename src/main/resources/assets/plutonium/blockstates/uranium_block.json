@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "plutonium:block/uranium_block"
+    }
+  }
+}
