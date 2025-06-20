@@ -3,8 +3,10 @@ package net.nancy.plutonium.item.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
@@ -12,7 +14,12 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.nancy.plutonium.block.ModBlocks;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class MetalDetectorItem extends Item {
 
@@ -60,5 +67,11 @@ public class MetalDetectorItem extends Item {
 
     private boolean isValuableBlock(BlockState state) {
         return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.GOLD_ORE) || state.isOf(Blocks.DEEPSLATE_GOLD_ORE) || state.isOf(ModBlocks.NICCIUM_ORE) || state.isOf(ModBlocks.URANIUM_ORE);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.plutonium.metal_detector.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }

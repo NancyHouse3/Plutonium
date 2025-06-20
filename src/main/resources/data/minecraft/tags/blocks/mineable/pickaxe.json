@@ -7,6 +7,9 @@
 
     "plutonium:niccium_block",
     "plutonium:niccium_ore",
-    "plutonium:deepslate_niccium_ore"
+    "plutonium:deepslate_niccium_ore",
+
+    "plutonium:weathered_gray_concrete",
+    "plutonium:grate_block"
   ]
 }

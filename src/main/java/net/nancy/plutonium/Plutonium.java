@@ -2,6 +2,7 @@ package net.nancy.plutonium;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.nancy.plutonium.block.ModBlocks;
 import net.nancy.plutonium.item.ModItemGroups;
 import net.nancy.plutonium.item.ModItems;
@@ -19,5 +20,7 @@ public class Plutonium implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		ModItems.registerModItems();
+
+		FuelRegistry.INSTANCE.add(ModItems.GASOLINE, 7200);
 	}
 }

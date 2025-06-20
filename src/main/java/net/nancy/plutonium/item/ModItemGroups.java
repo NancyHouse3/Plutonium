@@ -29,12 +29,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NICCIUM_BLOCK);
 
                         entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModBlocks.WEATHERED_GRAY_CONCRETE);
+                        entries.add(ModBlocks.GRATE_BLOCK);
 
                         entries.add(ModItems.POLYMER);
                         entries.add(ModItems.DUCT_TAPE);
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.FIRE_AXE);
                         entries.add(ModItems.MUTFRUIT);
+                        entries.add(ModItems.GASOLINE);
 
                     }).build());
 

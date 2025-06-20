@@ -7,5 +7,6 @@ import net.minecraft.item.FoodComponents;
 
 public class ModFoodComponents {
 
-    public static final FoodComponent MUTFRUIT = new FoodComponent.Builder().hunger(4).saturationModifier(0.3f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100), 0.5f).build();
+    public static final FoodComponent MUTFRUIT = new FoodComponent.Builder().hunger(4).saturationModifier(0.30f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100), 0.25f).build();
 }

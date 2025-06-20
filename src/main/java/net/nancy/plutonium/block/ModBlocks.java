@@ -21,6 +21,8 @@ public class ModBlocks {
     public static final Block NICCIUM_ORE = registerBlock("niccium_ore", new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block DEEPSLATE_NICCIUM_ORE = registerBlock("deepslate_niccium_ore", new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)));
     public static final Block SOUND_BLOCK = registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block WEATHERED_GRAY_CONCRETE = registerBlock("weathered_gray_concrete", new Block(FabricBlockSettings.copyOf(Blocks.GRAY_CONCRETE)));
+    public static final Block GRATE_BLOCK = registerBlock("grate_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

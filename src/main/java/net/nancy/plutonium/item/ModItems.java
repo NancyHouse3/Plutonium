@@ -17,7 +17,8 @@ public class ModItems {
     public static final Item DUCT_TAPE = registerItem("duct_tape", new Item(new FabricItemSettings()));
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
     public static final Item FIRE_AXE = registerItem("fire_axe", new AxeItem(ToolMaterials.IRON,5f,0.5f,new FabricItemSettings()));
-    public static final Item MUTFRUIT = registerItem("Mutfruit", new Item(new FabricItemSettings().food(ModFoodComponents.MUTFRUIT)));
+    public static final Item MUTFRUIT = registerItem("mutfruit", new Item(new FabricItemSettings().food(ModFoodComponents.MUTFRUIT)));
+    public static final Item GASOLINE = registerItem("gasoline", new Item(new FabricItemSettings()));
 
     public static final Item RAW_URANIUM = registerItem("raw_uranium", new Item(new FabricItemSettings()));
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings()));

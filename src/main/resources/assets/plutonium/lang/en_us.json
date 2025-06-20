@@ -4,8 +4,11 @@
   "item.plutonium.metal_detector": "Metal Detector",
   "item.plutonium.fire_axe": "Fire Axe",
   "item.plutonium.mutfruit": "Mutfruit",
+  "item.plutonium.gasoline": "Gasoline",
 
   "block.plutonium.sound_block": "Sound Block",
+  "block.plutonium.weathered_gray_concrete": "Weathered Gray Concrete",
+  "block.plutonium.grate_block": "Grate Block",
 
   "item.plutonium.raw_uranium": "Raw Uranium",
   "item.plutonium.uranium_ingot": "Uranium Ingot",
@@ -19,5 +22,7 @@
   "block.plutonium.niccium_ore": "Niccium Ore",
   "block.plutonium.deepslate_niccium_ore": "Deepslate Niccium Ore",
 
-  "itemgroup.uranium": "Nancy's Nuclear Thingies!"
+  "itemgroup.uranium": "Nancy's Nuclear Thingies!",
+  "tooltip.plutonium.metal_detector.tooltip": "Talk to your \"metal detector\" to help you find materials!",
+  "tooltip.plutonium.sound_block.tooltip": "This block emits a cow bell sound when clicked"
 }
