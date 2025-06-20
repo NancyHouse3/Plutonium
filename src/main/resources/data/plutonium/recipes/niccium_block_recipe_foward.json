@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "plutonium:niccium_ingot"
+    }
+  },
+  "result": {
+    "item": "plutonium:niccium_block"
+  }
+}

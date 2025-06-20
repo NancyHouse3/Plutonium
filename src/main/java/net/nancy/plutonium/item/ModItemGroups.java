@@ -18,12 +18,23 @@ public class ModItemGroups {
 
                         entries.add(ModItems.RAW_URANIUM);
                         entries.add(ModItems.URANIUM_INGOT);
-                        entries.add(ModBlocks.URANIUM_BLOCK);
                         entries.add(ModBlocks.URANIUM_ORE);
                         entries.add(ModBlocks.URANIUM_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.URANIUM_BLOCK);
+
+                        entries.add(ModItems.RAW_NICCIUM);
+                        entries.add(ModItems.NICCIUM_INGOT);
+                        entries.add(ModBlocks.NICCIUM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_NICCIUM_ORE);
+                        entries.add(ModBlocks.NICCIUM_BLOCK);
+
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(ModItems.POLYMER);
                         entries.add(ModItems.DUCT_TAPE);
+                        entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.FIRE_AXE);
+                        entries.add(ModItems.MUTFRUIT);
 
                     }).build());
 

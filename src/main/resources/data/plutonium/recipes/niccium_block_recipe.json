@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+  {
+    "item": "plutonium:niccium_block"
+  }
+],
+  "result":{
+    "item": "plutonium:niccium_ingot",
+    "count": 9
+  }
+}
