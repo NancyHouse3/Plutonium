@@ -23,10 +23,29 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NICCIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NICCIUM_BLOCK);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GRATE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool gratePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GRATE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool yellowPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.YELLOW_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool redPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RED_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool sandbagPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SANDBAG_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool rugPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUG_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WEATHERED_GRAY_CONCRETE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
+
+        gratePool.stairs(ModBlocks.GRATE_STAIRS);
+        gratePool.slab(ModBlocks.GRATE_SLAB);
+
+        redPool.button(ModBlocks.RED_BUTTON);
+
+        sandbagPool.wall(ModBlocks.SANDBAGS);
+
+        rugPool.pressurePlate(ModBlocks.RUG_PLATE);
+
+        yellowPool.fence(ModBlocks.YELLOW_FENCE);
+        yellowPool.fenceGate(ModBlocks.YELLOW_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.SECURITY_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MAN_HOLE_COVER);
     }
 
     @Override
@@ -42,6 +61,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.POLYMER, Models.GENERATED);
         itemModelGenerator.register(ModItems.GASOLINE, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.FIRE_AXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FIRE_AXE, Models.HANDHELD);
     }
 }

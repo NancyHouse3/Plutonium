@@ -32,12 +32,23 @@ public class ModItemGroups {
                         entries.add(ModBlocks.WEATHERED_GRAY_CONCRETE);
                         entries.add(ModBlocks.GRATE_BLOCK);
 
+                        entries.add(ModBlocks.GRATE_STAIRS);
+                        entries.add(ModBlocks.GRATE_SLAB);
+                        entries.add(ModBlocks.RED_BUTTON);
+                        entries.add(ModBlocks.RUG_PLATE);
+                        entries.add(ModBlocks.YELLOW_FENCE);
+                        entries.add(ModBlocks.YELLOW_GATE);
+                        entries.add(ModBlocks.SANDBAGS);
+                        entries.add(ModBlocks.SECURITY_DOOR);
+                        entries.add(ModBlocks.MAN_HOLE_COVER);
+
                         entries.add(ModItems.POLYMER);
                         entries.add(ModItems.DUCT_TAPE);
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.FIRE_AXE);
                         entries.add(ModItems.MUTFRUIT);
                         entries.add(ModItems.GASOLINE);
+                        entries.add(ModItems.ASSAULT_RIFLE);
 
                     }).build());
 

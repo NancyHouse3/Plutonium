@@ -55,5 +55,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.NICCIUM_BLOCK)
         ;
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.YELLOW_FENCE)
+        ;
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.YELLOW_GATE)
+        ;
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.SANDBAGS)
+        ;
     }
 }

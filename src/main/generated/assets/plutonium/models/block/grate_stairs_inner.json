@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "plutonium:block/grate_block",
+    "side": "plutonium:block/grate_block",
+    "top": "plutonium:block/grate_block"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "plutonium:block/grate_slab"
+    },
+    "type=double": {
+      "model": "plutonium:block/grate_block"
+    },
+    "type=top": {
+      "model": "plutonium:block/grate_slab_top"
+    }
+  }
+}

@@ -9,12 +9,24 @@
   "block.plutonium.sound_block": "Sound Block",
   "block.plutonium.weathered_gray_concrete": "Weathered Gray Concrete",
   "block.plutonium.grate_block": "Grate Block",
+  
+  "block.plutonium.grate_stairs": "Grate Stairs",
+  "block.plutonium.grate_slab": "Grate Slab",
+  "block.plutonium.red_button": "Red Button",
+  "block.plutonium.rug_plate": "Rug Plate",
+  "block.plutonium.yellow_fence": "Yellow Fence",
+  "block.plutonium.yellow_gate": "Yellow Gate",
+  "block.plutonium.sand_bags": "Sand Bags",
+  "block.plutonium.security_door": "Security Door",
+  "block.plutonium.man_hole_cover": "Man Hole Cover",
 
   "item.plutonium.raw_uranium": "Raw Uranium",
   "item.plutonium.uranium_ingot": "Uranium Ingot",
   "block.plutonium.uranium_block": "Block of Uranium",
   "block.plutonium.uranium_ore": "Uranium Ore",
   "block.plutonium.uranium_deepslate_ore": "Deepslate Uranium Ore",
+
+  "item.plutonium.assault_rifle": "Assault Rifle",
 
   "item.plutonium.raw_niccium": "Raw Niccium",
   "item.plutonium.niccium_ingot": "Niccium Ingot",

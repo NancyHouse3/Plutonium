@@ -31,6 +31,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SOUND_BLOCK);
         addDrop(ModBlocks.WEATHERED_GRAY_CONCRETE);
 
+        addDrop(ModBlocks.GRATE_STAIRS);
+        addDrop(ModBlocks.RED_BUTTON);
+        addDrop(ModBlocks.YELLOW_FENCE);
+        addDrop(ModBlocks.YELLOW_GATE);
+        addDrop(ModBlocks.RUG_PLATE);
+        addDrop(ModBlocks.SANDBAGS);
+        addDrop(ModBlocks.MAN_HOLE_COVER);
+
+        addDrop(ModBlocks.SECURITY_DOOR, doorDrops(ModBlocks.SECURITY_DOOR));
+        addDrop(ModBlocks.GRATE_SLAB, slabDrops(ModBlocks.GRATE_SLAB));
+
         //Ore Drops
         addDrop(ModBlocks.NICCIUM_ORE, oreDrops(ModBlocks.NICCIUM_ORE, ModItems.RAW_NICCIUM));
         addDrop(ModBlocks.DEEPSLATE_NICCIUM_ORE, clusterOreDrop(ModBlocks.DEEPSLATE_NICCIUM_ORE, ModItems.RAW_NICCIUM,1.0f,4.0f));

@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -132,7 +133,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COPPER_INGOT),conditionsFromItem(Items.COPPER_INGOT))
                 .criterion(hasItem(Items.GOLD_INGOT),conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(Items.REDSTONE),conditionsFromItem(Items.REDSTONE))
-                .offerTo(exporter,new Identifier(getRecipeName(ModItems.METAL_DETECTOR)));
+                .offerTo(exporter,new Identifier(getRecipeName(ModItems.METAL_DETECTOR)))
+        ;
+
+        /*
+         */
+        ShapedRecipeJsonBuilder.create(
+                RecipeCategory.DECORATIONS,
+                ModBlocks.SECURITY_DOOR,
+                2)
+                .pattern("III")
+                .pattern("RCR")
+                .pattern("IRI")
+                .input('I',Items.IRON_INGOT)
+                .input('R',Items.REDSTONE)
+                .input('C',Items.YELLOW_CONCRETE)
+                .criterion(hasItem(Items.COPPER_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.GOLD_INGOT),conditionsFromItem(Items.YELLOW_CONCRETE))
+                .criterion(hasItem(Items.REDSTONE),conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter,new Identifier("best_security_door_recipe"))
+        ;
+
+        ShapedRecipeJsonBuilder.create(
+                RecipeCategory.MISC,
+                ModBlocks.GRATE_BLOCK,
+                12)
+                .pattern("IBI")
+                .pattern("BIB")
+                .pattern("IBI")
+                .input('I',Items.IRON_INGOT)
+                .input('B',Items.IRON_BARS)
+                .criterion(hasItem(Items.COPPER_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.REDSTONE),conditionsFromItem(Items.IRON_BARS))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.SECURITY_DOOR)))
+        ;
+
+        createStairsRecipe(ModBlocks.GRATE_STAIRS, Ingredient.ofItems(ModBlocks.GRATE_BLOCK))
+                .criterion(hasItem(ModBlocks.GRATE_BLOCK),conditionsFromItem(ModBlocks.GRATE_BLOCK))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.GRATE_STAIRS)))
+        ;
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRATE_SLAB, Ingredient.ofItems(ModBlocks.GRATE_BLOCK))
+                .criterion(hasItem(ModBlocks.GRATE_BLOCK),conditionsFromItem(ModBlocks.GRATE_BLOCK))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.GRATE_SLAB)))
         ;
     }
 }
