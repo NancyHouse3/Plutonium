@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 175,
+  "experience": 0.7,
+  "group": "gasoline",
+  "ingredient": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "result": "plutonium:gasoline"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.9,
+  "group": "uranium",
+  "ingredient": {
+    "item": "plutonium:uranium_deepslate_ore"
+  },
+  "result": "plutonium:uranium_ingot"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 1.2,
+  "group": "niccium",
+  "ingredient": {
+    "item": "plutonium:raw_niccium"
+  },
+  "result": "plutonium:niccium_ingot"
+}

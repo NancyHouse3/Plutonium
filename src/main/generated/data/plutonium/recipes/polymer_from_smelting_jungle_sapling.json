@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 175,
+  "experience": 0.7,
+  "group": "polymer",
+  "ingredient": {
+    "item": "minecraft:jungle_sapling"
+  },
+  "result": "plutonium:polymer"
+}

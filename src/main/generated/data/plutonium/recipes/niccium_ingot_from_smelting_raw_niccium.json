@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 8.0,
+  "group": "niccium",
+  "ingredient": {
+    "item": "plutonium:raw_niccium"
+  },
+  "result": "plutonium:niccium_ingot"
+}

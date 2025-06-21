@@ -1,0 +1,10 @@
+// 1.20.1	2025-06-21T03:56:47.8837591	Plutonium/Block Loot Tables
+a9b9568825a85d2b4aec99f0808dca3942ef3e25 data\plutonium\loot_tables\blocks\niccium_ore.json
+0c4d470ea37cd1245fe10ec78db8bdb4e956f865 data\plutonium\loot_tables\blocks\grate_block.json
+814b4fe486d799612e9fd8f9535684e720c3e5d4 data\plutonium\loot_tables\blocks\sound_block.json
+fab352f248dab26f9b76153c975b66219168dfdb data\plutonium\loot_tables\blocks\uranium_block.json
+8b27ae5138f9cfa0835613e79cb0bf58f6bcfadd data\plutonium\loot_tables\blocks\niccium_block.json
+4c8e364dc073e751df89aa835f42cbf9116d54d3 data\plutonium\loot_tables\blocks\deepslate_niccium_ore.json
+16a2aec0fcbe7581a9f56d780c7e0e3f57f0e59f data\plutonium\loot_tables\blocks\uranium_ore.json
+12999934db67e36f9f10c25416182547ef52ec1d data\plutonium\loot_tables\blocks\weathered_gray_concrete.json
+a1230731bca1ba8f75bc8030af7f8f162c6724c4 data\plutonium\loot_tables\blocks\uranium_deepslate_ore.json

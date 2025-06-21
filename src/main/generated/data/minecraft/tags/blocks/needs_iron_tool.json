@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "plutonium:niccium_ore",
+    "plutonium:uranium_deepslate_ore",
+    "plutonium:deepslate_niccium_ore",
+    "plutonium:grate_block",
+    "plutonium:uranium_block"
+  ]
+}
