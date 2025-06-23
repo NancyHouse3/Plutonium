@@ -2,24 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": {
-      "item": "minecraft:yellow_concrete"
+    "B": {
+      "item": "minecraft:iron_bars"
     },
     "I": {
       "item": "minecraft:iron_ingot"
-    },
-    "R": {
-      "item": "minecraft:redstone"
     }
   },
   "pattern": [
-    "III",
-    "RCR",
-    "IRI"
+    "IBI",
+    "BIB",
+    "IBI"
   ],
   "result": {
-    "count": 2,
-    "item": "plutonium:security_door"
+    "count": 12,
+    "item": "plutonium:grate_block"
   },
   "show_notification": true
 }

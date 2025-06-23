@@ -2,8 +2,11 @@ package net.nancy.plutonium.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 import net.nancy.plutonium.block.ModBlocks;
 import net.nancy.plutonium.util.ModTags;
 
@@ -44,14 +47,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.URANIUM_ORE)
+                .add(ModBlocks.WEATHERED_GRAY_CONCRETE)
         ;
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.NICCIUM_ORE)
                 .add(ModBlocks.URANIUM_DEEPSLATE_ORE)
                 .add(ModBlocks.DEEPSLATE_NICCIUM_ORE)
                 .add(ModBlocks.GRATE_BLOCK)
+                .add(ModBlocks.GRATE_STAIRS)
+                .add(ModBlocks.GRATE_SLAB)
+                .add(ModBlocks.YELLOW_GATE)
+                .add(ModBlocks.YELLOW_FENCE)
                 .add(ModBlocks.URANIUM_BLOCK)
+                .add(ModBlocks.SECURITY_DOOR)
         ;
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
+        ;
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
+        ;
+
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.NICCIUM_BLOCK)
         ;

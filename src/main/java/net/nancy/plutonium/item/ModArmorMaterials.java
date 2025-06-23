@@ -2,6 +2,7 @@ package net.nancy.plutonium.item;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -9,9 +10,28 @@ import net.nancy.plutonium.Plutonium;
 
 import java.util.function.Supplier;
 
-public class ModArmorMaterials implements ArmorMaterial {
+public enum ModArmorMaterials implements ArmorMaterial {
 
-    //CHAIN("vault guard",20,new int[] { 3, 8, 6 ,3}, 19,SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2f, 0f, () -> Ingredient.ofItems())
+    GUARD(
+            "guard",
+            12,
+            new int[] { 2, 5, 3 ,2},
+            19,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            0.0f,
+            0.0f,
+            () -> Ingredient.ofItems(ModItems.DUCT_TAPE,ModItems.POLYMER)
+    ),
+    POWERED_ARMOR(
+            "powered_armor",
+            12,
+            new int[] { 5, 10, 6 ,4},
+            19,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            1.0f,
+            0.1f,
+            () -> Ingredient.ofItems(ModItems.DUCT_TAPE, Items.IRON_INGOT)
+    );
 
     private final String name;
     private final int durabilityMultiplier;
@@ -28,7 +48,7 @@ public class ModArmorMaterials implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = {11,16,15,13};
 
-    public ModArmorMaterials (
+    ModArmorMaterials (
             String name,
             int durabilityMultiplier,
             int[] protectionAmmounts,
@@ -55,7 +75,7 @@ public class ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public int getProtection(ArmorItem.Type type) {
-        return BASE_DURABILITY[type.ordinal()];
+        return protectionAmmounts[type.ordinal()];
     }
 
     @Override

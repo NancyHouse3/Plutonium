@@ -148,10 +148,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('I',Items.IRON_INGOT)
                 .input('R',Items.REDSTONE)
                 .input('C',Items.YELLOW_CONCRETE)
-                .criterion(hasItem(Items.COPPER_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(Items.GOLD_INGOT),conditionsFromItem(Items.YELLOW_CONCRETE))
                 .criterion(hasItem(Items.REDSTONE),conditionsFromItem(Items.REDSTONE))
-                .offerTo(exporter,new Identifier("best_security_door_recipe"))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.SECURITY_DOOR)))
         ;
 
         ShapedRecipeJsonBuilder.create(
@@ -163,9 +163,75 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("IBI")
                 .input('I',Items.IRON_INGOT)
                 .input('B',Items.IRON_BARS)
-                .criterion(hasItem(Items.COPPER_INGOT),conditionsFromItem(Items.IRON_INGOT))
-                .criterion(hasItem(Items.REDSTONE),conditionsFromItem(Items.IRON_BARS))
-                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.SECURITY_DOOR)))
+                .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.IRON_BARS),conditionsFromItem(Items.IRON_BARS))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.GRATE_BLOCK)))
+        ;
+
+        ShapedRecipeJsonBuilder.create(
+                RecipeCategory.MISC,
+                ModItems.NICCIUM_PICKAXE,
+                1)
+                .pattern("NNN")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('N',ModItems.NICCIUM_INGOT)
+                .input('S',Items.STICK)
+                .criterion(hasItem(ModItems.NICCIUM_INGOT),conditionsFromItem(ModItems.NICCIUM_INGOT))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter,new Identifier(getRecipeName(ModItems.NICCIUM_PICKAXE)))
+        ;
+        ShapedRecipeJsonBuilder.create(
+                RecipeCategory.MISC,
+                ModItems.NICCIUM_AXE,
+                1)
+                .pattern("NN ")
+                .pattern("NS ")
+                .pattern(" S ")
+                .input('N',ModItems.NICCIUM_INGOT)
+                .input('S',Items.STICK)
+                .criterion(hasItem(ModItems.NICCIUM_INGOT),conditionsFromItem(ModItems.NICCIUM_INGOT))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter,new Identifier(getRecipeName(ModItems.NICCIUM_AXE)))
+        ;
+        ShapedRecipeJsonBuilder.create(
+                RecipeCategory.MISC,
+                ModItems.NICCIUM_SHOVEL,
+                1)
+                .pattern(" N ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('N',ModItems.NICCIUM_INGOT)
+                .input('S',Items.STICK)
+                .criterion(hasItem(ModItems.NICCIUM_INGOT),conditionsFromItem(ModItems.NICCIUM_INGOT))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter,new Identifier(getRecipeName(ModItems.NICCIUM_SHOVEL)))
+        ;
+        ShapedRecipeJsonBuilder.create(
+                RecipeCategory.MISC,
+                ModItems.NICCIUM_SWORD,
+                1)
+                .pattern(" N ")
+                .pattern(" N ")
+                .pattern(" S ")
+                .input('N',ModItems.NICCIUM_INGOT)
+                .input('S',Items.STICK)
+                .criterion(hasItem(ModItems.NICCIUM_INGOT),conditionsFromItem(ModItems.NICCIUM_INGOT))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter,new Identifier(getRecipeName(ModItems.NICCIUM_SWORD)))
+        ;
+        ShapedRecipeJsonBuilder.create(
+                RecipeCategory.MISC,
+                ModItems.NICCIUM_HOE,
+                1)
+                .pattern(" NN")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('N',ModItems.NICCIUM_INGOT)
+                .input('S',Items.STICK)
+                .criterion(hasItem(ModItems.NICCIUM_INGOT),conditionsFromItem(ModItems.NICCIUM_INGOT))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter,new Identifier(getRecipeName(ModItems.NICCIUM_HOE)))
         ;
 
         createStairsRecipe(ModBlocks.GRATE_STAIRS, Ingredient.ofItems(ModBlocks.GRATE_BLOCK))

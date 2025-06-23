@@ -46,9 +46,21 @@ public class ModItemGroups {
                         entries.add(ModItems.DUCT_TAPE);
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.FIRE_AXE);
+                        entries.add(ModItems.BATON);
                         entries.add(ModItems.MUTFRUIT);
                         entries.add(ModItems.GASOLINE);
                         entries.add(ModItems.ASSAULT_RIFLE);
+
+                        entries.add(ModItems.NICCIUM_PICKAXE);
+                        entries.add(ModItems.NICCIUM_AXE);
+                        entries.add(ModItems.NICCIUM_SHOVEL);
+                        entries.add(ModItems.NICCIUM_SWORD);
+                        entries.add(ModItems.NICCIUM_HOE);
+
+                        entries.add(ModItems.GUARD_HELMET);
+                        entries.add(ModItems.GUARD_CHESTPLATE);
+                        entries.add(ModItems.GUARD_LEGGINGS);
+                        entries.add(ModItems.GUARD_BOOTS);
 
                     }).build());
 

@@ -3,6 +3,7 @@
   "item.plutonium.duct_tape": "Duct Tape",
   "item.plutonium.metal_detector": "Metal Detector",
   "item.plutonium.fire_axe": "Fire Axe",
+  "item.plutonium.baton": "Baton",
   "item.plutonium.mutfruit": "Mutfruit",
   "item.plutonium.gasoline": "Gasoline",
 
@@ -26,13 +27,27 @@
   "block.plutonium.uranium_ore": "Uranium Ore",
   "block.plutonium.uranium_deepslate_ore": "Deepslate Uranium Ore",
 
+  "item.plutonium.guard_helmet": "Guard Helmet",
+  "item.plutonium.guard_chestplate": "Guard Chestplate",
+  "item.plutonium.guard_leggings": "Guard Leggings",
+  "item.plutonium.guard_boots": "Guard Boots",
+
   "item.plutonium.assault_rifle": "Assault Rifle",
+
+  "block.plutonium.yellow_block": "Yellow Block (This shouldn't exist. I don't like that it does)",
+  "block.plutonium.red_block": "Red Block (This shouldn't exist. I don't like that it does)",
 
   "item.plutonium.raw_niccium": "Raw Niccium",
   "item.plutonium.niccium_ingot": "Niccium Ingot",
   "block.plutonium.niccium_block": "Block of Niccium",
   "block.plutonium.niccium_ore": "Niccium Ore",
   "block.plutonium.deepslate_niccium_ore": "Deepslate Niccium Ore",
+
+  "item.plutonium.niccium_pickaxe": "Niccium Pickaxe",
+  "item.plutonium.niccium_axe": "Niccium Axe",
+  "item.plutonium.niccium_shovel": "Niccium Shovel",
+  "item.plutonium.niccium_sword": "Niccium Sword",
+  "item.plutonium.niccium_hoe": "Niccium Hoe",
 
   "itemgroup.uranium": "Nancy's Nuclear Thingies!",
   "tooltip.plutonium.metal_detector.tooltip": "Talk to your \"metal detector\" to help you find materials!",

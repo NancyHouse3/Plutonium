@@ -1,7 +1,19 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_copper_ingot": {
+    "has_iron_bars": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_bars"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_iron_ingot": {
       "conditions": {
         "items": [
           {
@@ -13,48 +25,23 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_gold_ingot": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:yellow_concrete"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_redstone": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:redstone"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:best_security_door_recipe"
+        "recipe": "minecraft:grate_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_copper_ingot",
-      "has_gold_ingot",
-      "has_redstone",
+      "has_iron_ingot",
+      "has_iron_bars",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:best_security_door_recipe"
+      "minecraft:grate_block"
     ]
   },
   "sends_telemetry_event": false

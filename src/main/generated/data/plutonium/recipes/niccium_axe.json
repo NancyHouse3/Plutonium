@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "plutonium:niccium_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "NN ",
+    "NS ",
+    " S "
+  ],
+  "result": {
+    "item": "plutonium:niccium_axe"
+  },
+  "show_notification": true
+}

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.nancy.plutonium.block.ModBlocks;
 import net.nancy.plutonium.item.ModItems;
 
@@ -62,5 +63,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GASOLINE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FIRE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BATON, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.NICCIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NICCIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NICCIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NICCIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NICCIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GUARD_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GUARD_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GUARD_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GUARD_BOOTS));
     }
 }

@@ -1,10 +1,12 @@
-// 1.20.1	2025-06-21T13:34:23.1122908	Plutonium/Tags for minecraft:block
+// 1.20.1	2025-06-22T20:14:03.2093966	Plutonium/Tags for minecraft:block
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_5.json
 e7d1eed21c16b963924bb948ea1e7d47f03eb2d8 data\plutonium\tags\blocks\metal_detector_detectable_blocks.json
 b29d5bd6e7608d87dbfb8c9fc29c108cdd61fe6d data\minecraft\tags\blocks\fence_gates.json
 2055623e2c8092665de35bbfb8ce52d0b6e3f70b data\minecraft\tags\blocks\needs_diamond_tool.json
 2be8ac488e91f8568ed93ac40445e3f01eea3138 data\minecraft\tags\blocks\walls.json
-50b909eed3e61d76b1bfc0fb2c0952b21ae4d8c8 data\minecraft\tags\blocks\needs_stone_tool.json
+f354104d099b9955a7cdf03c991c5e1b0ec6d171 data\minecraft\tags\blocks\needs_stone_tool.json
 8228ed3ac16aeffa19755befaabdeb1236962c00 data\minecraft\tags\blocks\mineable\axe.json
-e5126090707b4232b1f553126b689e7f1b028601 data\minecraft\tags\blocks\needs_iron_tool.json
+7859fca92b2aca613ef117a9171fb37189a2c81a data\minecraft\tags\blocks\needs_iron_tool.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 712b94a7a83df43c272c6a61349c16e1c33b1c87 data\minecraft\tags\blocks\mineable\pickaxe.json
 394e4eacc0d0be89e5bbe010b21bc78285e94faa data\minecraft\tags\blocks\fences.json

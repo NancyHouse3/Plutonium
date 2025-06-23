@@ -5,6 +5,11 @@
     "plutonium:uranium_deepslate_ore",
     "plutonium:deepslate_niccium_ore",
     "plutonium:grate_block",
-    "plutonium:uranium_block"
+    "plutonium:grate_stairs",
+    "plutonium:grate_slab",
+    "plutonium:yellow_gate",
+    "plutonium:yellow_fence",
+    "plutonium:uranium_block",
+    "plutonium:security_door"
   ]
 }

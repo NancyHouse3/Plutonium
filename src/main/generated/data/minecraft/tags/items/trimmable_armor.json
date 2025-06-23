@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "plutonium:guard_helmet",
+    "plutonium:guard_chestplate",
+    "plutonium:guard_leggings",
+    "plutonium:guard_boots"
+  ]
+}
