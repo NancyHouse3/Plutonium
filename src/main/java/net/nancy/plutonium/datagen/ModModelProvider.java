@@ -57,6 +57,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NICCIUM_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.DUCT_TAPE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ROUND_556, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUTFRUIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.POLYMER, Models.GENERATED);
@@ -75,5 +76,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GUARD_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GUARD_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GUARD_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.POWERED_ARMOR_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.POWERED_ARMOR_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.POWERED_ARMOR_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.POWERED_ARMOR_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMPIRE_RECRUIT_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMPIRE_RECRUIT_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMPIRE_RECRUIT_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMPIRE_RECRUIT_BOOTS));
     }
 }

@@ -62,6 +62,16 @@ public class ModItemGroups {
                         entries.add(ModItems.GUARD_LEGGINGS);
                         entries.add(ModItems.GUARD_BOOTS);
 
+                        entries.add(ModItems.POWERED_ARMOR_HELMET);
+                        entries.add(ModItems.POWERED_ARMOR_CHESTPLATE);
+                        entries.add(ModItems.POWERED_ARMOR_LEGGINGS);
+                        entries.add(ModItems.POWERED_ARMOR_BOOTS);
+
+                        entries.add(ModItems.EMPIRE_RECRUIT_HELMET);
+                        entries.add(ModItems.EMPIRE_RECRUIT_CHESTPLATE);
+                        entries.add(ModItems.EMPIRE_RECRUIT_LEGGINGS);
+                        entries.add(ModItems.EMPIRE_RECRUIT_BOOTS);
+
                     }).build());
 
     public static void registerItemGroups() {

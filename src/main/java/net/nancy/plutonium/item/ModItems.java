@@ -16,7 +16,8 @@ import net.nancy.plutonium.item.custom.MetalDetectorItem;
 public class ModItems {
     public static final Item POLYMER = registerItem("polymer", new Item(new FabricItemSettings()));
     public static final Item DUCT_TAPE = registerItem("duct_tape", new Item(new FabricItemSettings()));
-    public static final Item ASSAULT_RIFLE = registerItem("assault_rifle", new AssaultRifleItem(new FabricItemSettings().maxCount(1).maxDamage(512),3));
+    public static final Item ROUND_556 = registerItem("556_round", new Item(new FabricItemSettings()));
+    public static final Item ASSAULT_RIFLE = registerItem("assault_rifle", new AssaultRifleItem(new FabricItemSettings().maxCount(1).maxDamage(512),3,1.5f,1.8f));
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
     public static final Item FIRE_AXE = registerItem("fire_axe", new AxeItem(ToolMaterials.IRON,5f,0.5f,new FabricItemSettings()));
     public static final Item BATON = registerItem("baton", new SwordItem(ToolMaterials.IRON,5,2.5f,new FabricItemSettings().maxDamage(128)));
@@ -90,6 +91,54 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.GUARD,
             ArmorItem.Type.BOOTS,
             new FabricItemSettings())
+    );
+    public static final Item POWERED_ARMOR_HELMET = registerItem(
+            "powered_armor_helmet",
+            new ArmorItem(ModArmorMaterials.POWERED_ARMOR,
+                    ArmorItem.Type.HELMET,
+                    new FabricItemSettings())
+    );
+    public static final Item POWERED_ARMOR_CHESTPLATE = registerItem(
+            "powered_armor_chestplate",
+            new ArmorItem(ModArmorMaterials.POWERED_ARMOR,
+                    ArmorItem.Type.CHESTPLATE,
+                    new FabricItemSettings())
+    );
+    public static final Item POWERED_ARMOR_LEGGINGS = registerItem(
+            "powered_armor_leggings",
+            new ArmorItem(ModArmorMaterials.POWERED_ARMOR,
+                    ArmorItem.Type.LEGGINGS,
+                    new FabricItemSettings())
+    );
+    public static final Item POWERED_ARMOR_BOOTS = registerItem(
+            "powered_armor_boots",
+            new ArmorItem(ModArmorMaterials.POWERED_ARMOR,
+                    ArmorItem.Type.BOOTS,
+                    new FabricItemSettings())
+    );
+    public static final Item EMPIRE_RECRUIT_HELMET = registerItem(
+            "empire_recruit_helmet",
+            new ArmorItem(ModArmorMaterials.EMPIRE_RECRUIT,
+                    ArmorItem.Type.HELMET,
+                    new FabricItemSettings())
+    );
+    public static final Item EMPIRE_RECRUIT_CHESTPLATE = registerItem(
+            "empire_recruit_chestplate",
+            new ArmorItem(ModArmorMaterials.EMPIRE_RECRUIT,
+                    ArmorItem.Type.CHESTPLATE,
+                    new FabricItemSettings())
+    );
+    public static final Item EMPIRE_RECRUIT_LEGGINGS = registerItem(
+            "empire_recruit_leggings",
+            new ArmorItem(ModArmorMaterials.EMPIRE_RECRUIT,
+                    ArmorItem.Type.LEGGINGS,
+                    new FabricItemSettings())
+    );
+    public static final Item EMPIRE_RECRUIT_BOOTS = registerItem(
+            "empire_recruit_boots",
+            new ArmorItem(ModArmorMaterials.EMPIRE_RECRUIT,
+                    ArmorItem.Type.BOOTS,
+                    new FabricItemSettings())
     );
 
 

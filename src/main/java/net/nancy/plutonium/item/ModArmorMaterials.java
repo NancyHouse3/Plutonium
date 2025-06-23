@@ -22,9 +22,19 @@ public enum ModArmorMaterials implements ArmorMaterial {
             0.0f,
             () -> Ingredient.ofItems(ModItems.DUCT_TAPE,ModItems.POLYMER)
     ),
+    EMPIRE_RECRUIT(
+            "empire_recruit",
+            8,
+            new int[] { 2, 4, 3 ,2},
+            19,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
+            0.0f,
+            0.0f,
+            () -> Ingredient.ofItems(ModItems.DUCT_TAPE,Items.LEATHER)
+    ),
     POWERED_ARMOR(
             "powered_armor",
-            12,
+            75,
             new int[] { 5, 10, 6 ,4},
             19,
             SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,

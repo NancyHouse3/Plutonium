@@ -32,6 +32,16 @@
   "item.plutonium.guard_leggings": "Guard Leggings",
   "item.plutonium.guard_boots": "Guard Boots",
 
+  "item.plutonium.powered_armor_helmet": "Powered Armor Helmet",
+  "item.plutonium.powered_armor_chestplate": "Powered Armor Chestplate",
+  "item.plutonium.powered_armor_leggings": "Powered Armor Leggings",
+  "item.plutonium.powered_armor_boots": "Powered Armor Boots",
+
+  "item.plutonium.empire_recruit_helmet": "Empire Recruit Helmet",
+  "item.plutonium.empire_recruit_chestplate": "Empire Recruit Chestplate",
+  "item.plutonium.empire_recruit_leggings": "Empire Recruit Leggings",
+  "item.plutonium.empire_recruit_boots": "Empire Recruit Boots",
+
   "item.plutonium.assault_rifle": "Assault Rifle",
 
   "block.plutonium.yellow_block": "Yellow Block (This shouldn't exist. I don't like that it does)",

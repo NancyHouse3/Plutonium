@@ -1,7 +1,7 @@
-// 1.20.1	2025-06-22T20:14:03.2093966	Plutonium/Tags for minecraft:block
+// 1.20.1	2025-06-23T00:39:04.6186153	Plutonium/Tags for minecraft:block
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_5.json
-e7d1eed21c16b963924bb948ea1e7d47f03eb2d8 data\plutonium\tags\blocks\metal_detector_detectable_blocks.json
 b29d5bd6e7608d87dbfb8c9fc29c108cdd61fe6d data\minecraft\tags\blocks\fence_gates.json
+e7d1eed21c16b963924bb948ea1e7d47f03eb2d8 data\plutonium\tags\blocks\metal_detector_detectable_blocks.json
 2055623e2c8092665de35bbfb8ce52d0b6e3f70b data\minecraft\tags\blocks\needs_diamond_tool.json
 2be8ac488e91f8568ed93ac40445e3f01eea3138 data\minecraft\tags\blocks\walls.json
 f354104d099b9955a7cdf03c991c5e1b0ec6d171 data\minecraft\tags\blocks\needs_stone_tool.json
