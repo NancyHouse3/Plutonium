@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.nancy.plutonium.Plutonium;
+import net.nancy.plutonium.block.custom.MutfruitCropBlock;
 import net.nancy.plutonium.block.custom.SoundBlock;
 
 public class ModBlocks {
@@ -38,6 +39,8 @@ public class ModBlocks {
     public static final Block SANDBAGS = registerBlock("sand_bags", new WallBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE)));
     public static final Block SECURITY_DOOR = registerBlock("security_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON));
     public static final Block MAN_HOLE_COVER = registerBlock("man_hole_cover", new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON));
+    public static final Block MUTFRUIT_CROP = Registry.register(Registries.BLOCK, new Identifier(Plutonium.MOD_ID, "mutfruit_crop"),
+            new MutfruitCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

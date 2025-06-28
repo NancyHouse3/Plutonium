@@ -48,6 +48,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FIRE_AXE);
                         entries.add(ModItems.BATON);
                         entries.add(ModItems.MUTFRUIT);
+                        entries.add(ModItems.MUTFRUIT_SEEDS);
                         entries.add(ModItems.GASOLINE);
                         entries.add(ModItems.ASSAULT_RIFLE);
 

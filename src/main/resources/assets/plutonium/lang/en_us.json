@@ -5,6 +5,7 @@
   "item.plutonium.fire_axe": "Fire Axe",
   "item.plutonium.baton": "Baton",
   "item.plutonium.mutfruit": "Mutfruit",
+  "item.plutonium.mutfruit_seeds": "Mutfruit Seeds",
   "item.plutonium.gasoline": "Gasoline",
 
   "block.plutonium.sound_block": "Sound Block",
@@ -42,7 +43,10 @@
   "item.plutonium.empire_recruit_leggings": "Empire Recruit Leggings",
   "item.plutonium.empire_recruit_boots": "Empire Recruit Boots",
 
+  "item.plutonium.round_556": "5.56mm Rounds",
+
   "item.plutonium.assault_rifle": "Assault Rifle",
+  "item.plutonium.light_machine_gun": "Light Machine Gun",
 
   "block.plutonium.yellow_block": "Yellow Block (This shouldn't exist. I don't like that it does)",
   "block.plutonium.red_block": "Red Block (This shouldn't exist. I don't like that it does)",

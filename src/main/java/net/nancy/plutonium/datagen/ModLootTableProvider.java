@@ -7,13 +7,16 @@ import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 import net.nancy.plutonium.block.ModBlocks;
+import net.nancy.plutonium.block.custom.MutfruitCropBlock;
 import net.nancy.plutonium.item.ModItems;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
@@ -48,6 +51,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.URANIUM_ORE, oreDrops(ModBlocks.URANIUM_ORE, ModItems.RAW_URANIUM));
         addDrop(ModBlocks.URANIUM_DEEPSLATE_ORE, clusterOreDrop(ModBlocks.URANIUM_DEEPSLATE_ORE, ModItems.RAW_URANIUM,1.0f,3.0f));
+
+        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.MUTFRUIT_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(MutfruitCropBlock.AGE, 5));
+        addDrop(ModBlocks.MUTFRUIT_CROP, cropDrops(ModBlocks.MUTFRUIT_CROP, ModItems.MUTFRUIT, ModItems.MUTFRUIT_SEEDS, builder));
     }
 
     public LootTable.Builder clusterOreDrop(Block drop, Item item,float min, float max) { // for generating multiples like Copper or Lapis or Clay

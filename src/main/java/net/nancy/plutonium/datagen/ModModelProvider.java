@@ -7,6 +7,7 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 import net.nancy.plutonium.block.ModBlocks;
+import net.nancy.plutonium.block.custom.MutfruitCropBlock;
 import net.nancy.plutonium.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -47,6 +48,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.SECURITY_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MAN_HOLE_COVER);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.MUTFRUIT_CROP, MutfruitCropBlock.AGE, 0, 1, 2, 3, 4, 5);
     }
 
     @Override

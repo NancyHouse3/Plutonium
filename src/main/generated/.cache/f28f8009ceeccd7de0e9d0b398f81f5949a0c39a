@@ -1,8 +1,8 @@
-// 1.20.1	2025-06-23T00:39:04.6245985	Plutonium/Recipes
+// 1.20.1	2025-06-28T13:49:23.9146788	Plutonium/Recipes
 d0ab8454fa5766cab54386898de616d3de89d5c4 data\plutonium\advancements\recipes\misc\polymer_from_smelting_jungle_leaves.json
-0216c9d70816db3686edb1481198067f12fdab22 data\plutonium\recipes\niccium_block.json
-f8c119d06cbf90c106e957df36fd53729ad9622d data\plutonium\advancements\recipes\misc\polymer_from_smelting_jungle_sapling.json
 37e2ad544d6423dd341b2752afa3130655eeca6b data\plutonium\recipes\niccium_ingot_from_blasting_niccium_ore.json
+f8c119d06cbf90c106e957df36fd53729ad9622d data\plutonium\advancements\recipes\misc\polymer_from_smelting_jungle_sapling.json
+0216c9d70816db3686edb1481198067f12fdab22 data\plutonium\recipes\niccium_block.json
 29fd1865fe93a13910a5e149b721aa21d8f56037 data\plutonium\recipes\uranium_ingot_from_blasting_uranium_deepslate_ore.json
 b32f22b7847843a87d76f8cb90319315f89b2363 data\plutonium\advancements\recipes\misc\uranium_ingot_from_smelting_uranium_deepslate_ore.json
 bd20b5a16af89f1f3c9e9ffe6ce90fe7cd06e658 data\plutonium\advancements\recipes\misc\niccium_hoe.json

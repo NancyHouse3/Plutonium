@@ -1,8 +1,9 @@
-// 1.20.1	2025-06-23T00:39:04.6166115	Plutonium/Block Loot Tables
+// 1.20.1	2025-06-28T13:49:23.9076964	Plutonium/Block Loot Tables
 391d8d1b34302fdab26d83bdfcfabf7e70e0677d data\plutonium\loot_tables\blocks\yellow_fence.json
 0c4d470ea37cd1245fe10ec78db8bdb4e956f865 data\plutonium\loot_tables\blocks\grate_block.json
 fab352f248dab26f9b76153c975b66219168dfdb data\plutonium\loot_tables\blocks\uranium_block.json
 16a2aec0fcbe7581a9f56d780c7e0e3f57f0e59f data\plutonium\loot_tables\blocks\uranium_ore.json
+f6273111374b765c61f568806ed188b6cb6d293c data\plutonium\loot_tables\blocks\mutfruit_crop.json
 642196e125d4c94d2cc84eb081a71508dc8f7c0f data\plutonium\loot_tables\blocks\grate_slab.json
 a9b9568825a85d2b4aec99f0808dca3942ef3e25 data\plutonium\loot_tables\blocks\niccium_ore.json
 64e0dbfd72b231cc78a5bef76c35523899330cdd data\plutonium\loot_tables\blocks\grate_stairs.json

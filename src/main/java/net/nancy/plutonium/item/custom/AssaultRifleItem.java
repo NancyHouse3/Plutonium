@@ -23,30 +23,54 @@ public class AssaultRifleItem extends Item {
     public static int interval;
     public static float ammoVelocity;
     public static float spread;
-    public AssaultRifleItem(Settings settings, int interval, float ammoVelocity, float spread) {
+    public static Item ammo;
+    public static ItemStack currentAmmoPool = null;
+    public AssaultRifleItem(Settings settings, Item ammo, int interval, float ammoVelocity, float spread) {
         super(settings);
         this.interval = interval;
         this.ammoVelocity = ammoVelocity;
         this.spread = spread;
+        this.ammo = ammo;
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
-        world.playSound((PlayerEntity)null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.NEUTRAL, 0.55F, 4.0F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
-        if (!world.isClient) {
-            ArrowEntity arrowEntity = new ArrowEntity(world, user);
-            arrowEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, (3 * this.ammoVelocity), this.spread);
-            world.spawnEntity(arrowEntity);
+
+        for (ItemStack playerAmmo : user.getInventory().main) {
+            if (playerAmmo.isOf(ammo))  {
+                currentAmmoPool = playerAmmo;
+                break;
+            }else {
+                currentAmmoPool = null;
+            }
         }
 
-        user.incrementStat(Stats.USED.getOrCreateStat(this));
-        if (!user.getAbilities().creativeMode) {
-
-            itemStack.damage(1, user, (p) -> {
-                p.sendToolBreakStatus(user.getActiveHand());
-            });
+        if (currentAmmoPool != null || user.getAbilities().creativeMode) {
+            shoot(world,user,hand);
+            boolean hasAmmo = currentAmmoPool.isOf(ammo);
+            if (!hasAmmo && !user.getAbilities().creativeMode) {
+                currentAmmoPool.decrement(1);
+            }
         }
 
         return TypedActionResult.success(itemStack, world.isClient());
+    }
+
+    public void shoot(World world, PlayerEntity player, Hand hand) {
+        ItemStack itemStack = player.getStackInHand(hand);
+        world.playSound((PlayerEntity)null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.NEUTRAL, 0.55F, 4.0F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
+        if (!world.isClient) {
+            ArrowEntity arrowEntity = new ArrowEntity(world, player);
+            arrowEntity.setVelocity(player, player.getPitch(), player.getYaw(), 0.0F, (3 * this.ammoVelocity), this.spread);
+            world.spawnEntity(arrowEntity);
+        }
+
+        player.incrementStat(Stats.USED.getOrCreateStat(this));
+        if (!player.getAbilities().creativeMode) {
+
+            itemStack.damage(1, player, (p) -> {
+                p.sendToolBreakStatus(player.getActiveHand());
+            });
+        }
     }
 }

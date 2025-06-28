@@ -1,9 +1,6 @@
 package net.nancy.plutonium.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,16 +9,19 @@ import net.nancy.plutonium.Plutonium;
 import net.nancy.plutonium.block.ModBlocks;
 import net.nancy.plutonium.item.custom.AssaultRifleItem;
 import net.nancy.plutonium.item.custom.MetalDetectorItem;
+import net.nancy.plutonium.item.custom.ModArmorItem;
 
 public class ModItems {
     public static final Item POLYMER = registerItem("polymer", new Item(new FabricItemSettings()));
     public static final Item DUCT_TAPE = registerItem("duct_tape", new Item(new FabricItemSettings()));
     public static final Item ROUND_556 = registerItem("556_round", new Item(new FabricItemSettings()));
-    public static final Item ASSAULT_RIFLE = registerItem("assault_rifle", new AssaultRifleItem(new FabricItemSettings().maxCount(1).maxDamage(512),3,1.5f,1.8f));
+    public static final Item ASSAULT_RIFLE = registerItem("assault_rifle", new AssaultRifleItem(new FabricItemSettings().maxCount(1).maxDamage(512),ModItems.ROUND_556,3,1.5f,1.8f));
+    public static final Item LIGHT_MACHINE_GUN = registerItem("light_machine_gun", new AssaultRifleItem(new FabricItemSettings().maxCount(1).maxDamage(512),ModItems.ROUND_556,3,1.2f,3.0f));
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
     public static final Item FIRE_AXE = registerItem("fire_axe", new AxeItem(ToolMaterials.IRON,5f,0.5f,new FabricItemSettings()));
     public static final Item BATON = registerItem("baton", new SwordItem(ToolMaterials.IRON,5,2.5f,new FabricItemSettings().maxDamage(128)));
     public static final Item MUTFRUIT = registerItem("mutfruit", new Item(new FabricItemSettings().food(ModFoodComponents.MUTFRUIT)));
+    public static final Item MUTFRUIT_SEEDS = registerItem("mutfruit_seeds", new AliasedBlockItem(ModBlocks.MUTFRUIT_CROP, new FabricItemSettings()));
     public static final Item GASOLINE = registerItem("gasoline", new Item(new FabricItemSettings()));
     public static final Item RAW_URANIUM = registerItem("raw_uranium", new Item(new FabricItemSettings()));
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings()));
@@ -100,7 +100,7 @@ public class ModItems {
     );
     public static final Item POWERED_ARMOR_CHESTPLATE = registerItem(
             "powered_armor_chestplate",
-            new ArmorItem(ModArmorMaterials.POWERED_ARMOR,
+            new ModArmorItem(ModArmorMaterials.POWERED_ARMOR,
                     ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings())
     );
