@@ -49,6 +49,9 @@ public class ModItemGroups {
                         entries.add(ModItems.BATON);
                         entries.add(ModItems.MUTFRUIT);
                         entries.add(ModItems.MUTFRUIT_SEEDS);
+                        entries.add(ModItems.SCHURIR_LEAF);
+                        entries.add(ModItems.SCHURIR_SEEDS);
+                        entries.add(ModBlocks.DAHLIA);
                         entries.add(ModItems.GASOLINE);
                         entries.add(ModItems.ASSAULT_RIFLE);
 

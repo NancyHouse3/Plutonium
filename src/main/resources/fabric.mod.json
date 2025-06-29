@@ -18,7 +18,7 @@
 		"main": [
 			"net.nancy.plutonium.Plutonium"
 		],
-		"Client": [
+		"client": [
 			"net.nancy.plutonium.PlutoniumClient"
 		],
 		"fabric-datagen": [

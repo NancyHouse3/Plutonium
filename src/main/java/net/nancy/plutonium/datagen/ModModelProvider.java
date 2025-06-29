@@ -8,6 +8,7 @@ import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 import net.nancy.plutonium.block.ModBlocks;
 import net.nancy.plutonium.block.custom.MutfruitCropBlock;
+import net.nancy.plutonium.block.custom.SchurirCropBlock;
 import net.nancy.plutonium.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -50,6 +51,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MAN_HOLE_COVER);
 
         blockStateModelGenerator.registerCrop(ModBlocks.MUTFRUIT_CROP, MutfruitCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerCrop(ModBlocks.SCHURIR_CROP, SchurirCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DAHLIA, ModBlocks.POTTED_DAHLIA, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -62,6 +66,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DUCT_TAPE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROUND_556, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUTFRUIT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SCHURIR_LEAF, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.POLYMER, Models.GENERATED);
         itemModelGenerator.register(ModItems.GASOLINE, Models.GENERATED);

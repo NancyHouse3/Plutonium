@@ -22,6 +22,8 @@ public class ModItems {
     public static final Item BATON = registerItem("baton", new SwordItem(ToolMaterials.IRON,5,2.5f,new FabricItemSettings().maxDamage(128)));
     public static final Item MUTFRUIT = registerItem("mutfruit", new Item(new FabricItemSettings().food(ModFoodComponents.MUTFRUIT)));
     public static final Item MUTFRUIT_SEEDS = registerItem("mutfruit_seeds", new AliasedBlockItem(ModBlocks.MUTFRUIT_CROP, new FabricItemSettings()));
+    public static final Item SCHURIR_LEAF = registerItem("schurir_leaf", new Item(new FabricItemSettings()));
+    public static final Item SCHURIR_SEEDS = registerItem("schurir_seeds", new AliasedBlockItem(ModBlocks.SCHURIR_CROP, new FabricItemSettings()));
     public static final Item GASOLINE = registerItem("gasoline", new Item(new FabricItemSettings()));
     public static final Item RAW_URANIUM = registerItem("raw_uranium", new Item(new FabricItemSettings()));
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings()));

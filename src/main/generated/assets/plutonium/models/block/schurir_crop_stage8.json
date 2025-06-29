@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "plutonium:block/schurir_crop_stage8"
+  }
+}

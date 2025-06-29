@@ -1,11 +1,14 @@
-// 1.20.1	2025-06-28T13:49:23.9076964	Plutonium/Block Loot Tables
+// 1.20.1	2025-06-29T01:58:21.6922193	Plutonium/Block Loot Tables
 391d8d1b34302fdab26d83bdfcfabf7e70e0677d data\plutonium\loot_tables\blocks\yellow_fence.json
 0c4d470ea37cd1245fe10ec78db8bdb4e956f865 data\plutonium\loot_tables\blocks\grate_block.json
+c98fd858241c2b68efe05d0613cea07bc999d979 data\plutonium\loot_tables\blocks\dahlia.json
 fab352f248dab26f9b76153c975b66219168dfdb data\plutonium\loot_tables\blocks\uranium_block.json
 16a2aec0fcbe7581a9f56d780c7e0e3f57f0e59f data\plutonium\loot_tables\blocks\uranium_ore.json
 f6273111374b765c61f568806ed188b6cb6d293c data\plutonium\loot_tables\blocks\mutfruit_crop.json
+cca1955a116fb10d3076d66a7371d74bc6cbc449 data\plutonium\loot_tables\blocks\potted_dahlia.json
 642196e125d4c94d2cc84eb081a71508dc8f7c0f data\plutonium\loot_tables\blocks\grate_slab.json
 a9b9568825a85d2b4aec99f0808dca3942ef3e25 data\plutonium\loot_tables\blocks\niccium_ore.json
+fa46a42e1e03cece67ac0e011e929bd781522b30 data\plutonium\loot_tables\blocks\schurir_crop.json
 64e0dbfd72b231cc78a5bef76c35523899330cdd data\plutonium\loot_tables\blocks\grate_stairs.json
 2a451efdbc45a35d8489af7cb899d9224f48c8d3 data\plutonium\loot_tables\blocks\yellow_gate.json
 57b832cd6be3d8d3d47521a85059be53ae98c7d4 data\plutonium\loot_tables\blocks\sand_bags.json

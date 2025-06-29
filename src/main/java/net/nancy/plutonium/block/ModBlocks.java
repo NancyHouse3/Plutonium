@@ -3,6 +3,7 @@ package net.nancy.plutonium.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -10,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.nancy.plutonium.Plutonium;
 import net.nancy.plutonium.block.custom.MutfruitCropBlock;
+import net.nancy.plutonium.block.custom.SchurirCropBlock;
 import net.nancy.plutonium.block.custom.SoundBlock;
 
 public class ModBlocks {
@@ -41,6 +43,12 @@ public class ModBlocks {
     public static final Block MAN_HOLE_COVER = registerBlock("man_hole_cover", new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON));
     public static final Block MUTFRUIT_CROP = Registry.register(Registries.BLOCK, new Identifier(Plutonium.MOD_ID, "mutfruit_crop"),
             new MutfruitCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block SCHURIR_CROP = Registry.register(Registries.BLOCK, new Identifier(Plutonium.MOD_ID, "schurir_crop"),
+            new SchurirCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block DAHLIA = registerBlock("dahlia", new FlowerBlock(StatusEffects.FIRE_RESISTANCE,
+            10, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_DAHLIA = Registry.register(Registries.BLOCK, new Identifier(Plutonium.MOD_ID, "potted_dahlia"),
+            new FlowerPotBlock(DAHLIA,FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

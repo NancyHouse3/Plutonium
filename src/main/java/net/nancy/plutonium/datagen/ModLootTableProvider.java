@@ -17,6 +17,7 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.nancy.plutonium.block.ModBlocks;
 import net.nancy.plutonium.block.custom.MutfruitCropBlock;
+import net.nancy.plutonium.block.custom.SchurirCropBlock;
 import net.nancy.plutonium.item.ModItems;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
@@ -55,6 +56,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.MUTFRUIT_CROP).properties(StatePredicate.Builder.create()
                 .exactMatch(MutfruitCropBlock.AGE, 5));
         addDrop(ModBlocks.MUTFRUIT_CROP, cropDrops(ModBlocks.MUTFRUIT_CROP, ModItems.MUTFRUIT, ModItems.MUTFRUIT_SEEDS, builder));
+
+
+        BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.SCHURIR_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(SchurirCropBlock.AGE, 8));
+        addDrop(ModBlocks.SCHURIR_CROP, cropDrops(ModBlocks.SCHURIR_CROP, ModItems.SCHURIR_LEAF, ModItems.SCHURIR_SEEDS, builder2));
+
+        addDrop(ModBlocks.DAHLIA);
+        addPottedPlantDrops(ModBlocks.POTTED_DAHLIA);
     }
 
     public LootTable.Builder clusterOreDrop(Block drop, Item item,float min, float max) { // for generating multiples like Copper or Lapis or Clay
